@@ -1,0 +1,42 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>form.html</title>
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  </head>
+  <body>
+  </body>
+  <script language="JavaScript">
+  var person = {
+			name:"xxx",
+			age:"xxx",
+			address:[
+				{home:"xxshixxxqu"},
+				{family:"yyshiyyqu"}
+			]
+		 };	
+
+	//普通方法			 
+	function add(a,b){
+		return a+b;
+	}
+	
+	//alert(add(3,4));
+	
+	//使用json来定义函数
+	var method = {
+		add:function(a,b){
+			return a+b;
+		},
+		jianfa:function(a,b){
+			return a-b;
+		}
+		
+	};	
+	
+	alert(method.add(3,4));	
+	alert(method.jianfa(5,4));
+  </script>
+</html>
